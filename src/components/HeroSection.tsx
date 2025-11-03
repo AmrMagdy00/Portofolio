@@ -230,7 +230,7 @@ const HeroSection = () => {
                   <span className="text-gray-500">,</span>{" "}
                   <span className="text-green-600">'Next.JS'</span>
                   <span className="text-gray-500">,</span>{" "}
-                  <span className="text-green-600">'Node.js'</span>
+                  <span className="text-green-600">'Angular.JS'</span>
                   <span className="text-gray-500">,</span>{" "}
                   <span className="text-green-600">'Express.JS'</span>
                   <span className="text-gray-500">,</span>{" "}
