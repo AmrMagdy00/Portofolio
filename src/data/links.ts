@@ -3,7 +3,7 @@ export const Links = {
   linkedin: "https://www.linkedin.com/in/amrmagdydb/",
   email: "mailto:bamrmagdy@gmail.com",
   resume:
-    "https://drive.google.com/file/d/1Y7zp5VuLLZmfbMQfrHF9Q16I9j8tVTRU/view?usp=sharing",
+    "https://drive.google.com/drive/folders/1hxLy4CnWijYvJY3my_prfyveJTgATkK4",
   emailonly: "bamrmagdy@gmail.com",
   location: "Cairo , hadayk el koppa",
   phone: "+201000262449",

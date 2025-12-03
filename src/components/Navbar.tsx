@@ -78,7 +78,7 @@ const Navbar = () => {
                 asChild
                 onClick={handledownload}
               >
-                <a href={resumeUrl} download="Amr_Magdy_CV.pdf">
+                <a href={resumeUrl} target="_blank">
                   Resume
                 </a>
               </Button>
@@ -142,7 +142,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button size="sm" className="ml-3 mt-2" asChild>
-              <a href={resumeUrl} download="Amr_Magdy_CV.pdf">
+              <a href={resumeUrl} target="_blank">
                 Resume
               </a>
             </Button>
