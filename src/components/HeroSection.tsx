@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Code } from "lucide-react";
 import { motion } from "framer-motion";
 import { Links } from "@/data/links";
 
@@ -129,6 +129,7 @@ const HeroSection = () => {
               {[
                 { icon: Github, link: Links.github, label: "GitHub" },
                 { icon: Linkedin, link: Links.linkedin, label: "LinkedIn" },
+                { icon: Code, link: Links.leetcode, label: "LeetCode" },
                 { icon: Mail, link: Links.email, label: "Email" },
               ].map((social, index) => (
                 <motion.a

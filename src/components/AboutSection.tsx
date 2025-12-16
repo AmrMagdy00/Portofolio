@@ -1,17 +1,11 @@
-import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { useToast } from "@/hooks/use-toast";
-import { FileText, Briefcase, GraduationCap, Download } from "lucide-react";
+import { FileText, Briefcase, GraduationCap, Languages } from "lucide-react";
 import LazyImage from "./LazyImage";
-import { Links } from "@/data/links";
 
 const AboutSection = () => {
-  const resumeUrl = Links.resume;
-  const { toast } = useToast();
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -31,13 +25,6 @@ const AboutSection = () => {
         duration: 0.5,
       },
     },
-  };
-
-  const handledownload = () => {
-    toast({
-      title: "Downloading Resume",
-      description: "Your download will start shortly.",
-    });
   };
 
   return (
@@ -68,12 +55,15 @@ const AboutSection = () => {
                 <FileText className="w-5 h-5 text-primary" /> Bio
               </h3>
               <p className="text-muted-foreground">
-                Full Stack Developer with a strong base in C++, C#, and core CS
-                fundamentals (Data Structures, Algorithms, OOP, SOLID, OS,
-                Networking, Database, Design Patterns). then mastered the MERN
-                Stack through ITI projects. Passionate about working mainly as a
-                Back-End Developer using Node.js (Express/Nest), and also open
-                to Full Stack roles with React.js/Next.
+                Full-Stack Developer with a strong foundation in C++ and C# and
+                solid computer science fundamentals, including Data Structures,
+                Algorithms, OOP, SOLID principles, Operating Systems,
+                Networking, Databases, and Design Patterns. Gained hands-on
+                experience with the MERN Stack through ITI projects and
+                real-world applications. Passionate about working primarily as a
+                Back-End Developer using Node.js (Express / NestJS), while
+                remaining open to Full-Stack roles involving React.js and
+                Next.js.
               </p>
             </motion.div>
 
@@ -136,7 +126,7 @@ const AboutSection = () => {
                           Information Technology Institute (ITI)
                         </p>
                         <p className="text-sm text-muted-foreground">
-                          Mar 2025 — Aug 2025
+                          June 2025 — Dec 2025
                         </p>
                       </div>
                       <div>
@@ -148,6 +138,34 @@ const AboutSection = () => {
                         </p>
                         <p className="text-sm text-muted-foreground">
                           May 2025 — Present
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                variants={itemVariants}
+                whileHover={{
+                  y: -5,
+                  boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
+                }}
+              >
+                <Card className="h-full border-primary/10 bg-card/50 backdrop-blur-sm">
+                  <CardContent className="pt-6">
+                    <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                      <Languages className="w-5 h-5 text-primary" /> Languages
+                    </h3>
+                    <div className="space-y-2">
+                      <div>
+                        <p className="font-medium">Arabic</p>
+                        <p className="text-sm text-muted-foreground">Native</p>
+                      </div>
+                      <div>
+                        <p className="font-medium">English</p>
+                        <p className="text-sm text-muted-foreground">
+                          Professional Working Proficiency
                         </p>
                       </div>
                     </div>
@@ -221,18 +239,6 @@ const AboutSection = () => {
               <Badge variant="outline" className="bg-primary/10">
                 Mongo DB
               </Badge>
-            </motion.div>
-
-            <motion.div
-              variants={itemVariants}
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Button className="gap-2" asChild onClick={handledownload}>
-                <a href={resumeUrl} target="_blank">
-                  Download Resume
-                </a>
-              </Button>
             </motion.div>
           </motion.div>
         </div>

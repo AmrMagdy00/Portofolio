@@ -1,4 +1,12 @@
-import { Code, Database, Layout, Terminal, Cpu, Palette } from "lucide-react";
+import {
+  Code,
+  Database,
+  Layout,
+  Terminal,
+  Cpu,
+  Palette,
+  MessageSquare,
+} from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export type SkillCategory = {
@@ -22,7 +30,6 @@ export const skillCategories: SkillCategory[] = [
       "Angular.js",
       "Tailwind CSS",
       "shadcn/ui",
-      "Framer Motion",
       "Context API",
       "Responsive Design",
       "Performance Optimization",
@@ -40,7 +47,14 @@ export const skillCategories: SkillCategory[] = [
       "Clean Code Principles",
       "Desing Patterns",
       "SOLID Principles",
+      "Multi-Tenant Systems",
+      "Frontend–Backend Integration",
     ],
+  },
+  {
+    name: "Realtime & Messaging",
+    icon: MessageSquare,
+    skills: ["WebSockets", "RabbitMQ"],
   },
   {
     name: "Databases",
@@ -48,7 +62,6 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       "SQL Server",
       "MongoDB",
-      "PostgreSQL",
       "Firebase",
       "Database Design & Normalization",
       "Stored Procedures / Triggers / Views",
@@ -64,14 +77,11 @@ export const skillCategories: SkillCategory[] = [
       "Postman",
       "Swagger / API Documentation",
       "Docker (Basic)",
-      "Agile/Scrum",
       "VS Code",
       "CI/CD (GitHub Actions basics)",
-      "xUnit / NUnit / Jest",
-      "Integration Testing",
+      "Unit Testing",
       "Postman API Testing",
-      "Logging Tools (Serilog / NLog)",
-      "Cloud Basics (Azure / AWS)",
+      "Logging Tools ",
     ],
   },
   {
@@ -81,7 +91,6 @@ export const skillCategories: SkillCategory[] = [
       "Figma",
       "Adobe Illustrator",
       "UI/UX Design",
-      "Wireframing",
       "User Experience Enhancement",
     ],
   },

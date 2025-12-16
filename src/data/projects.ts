@@ -13,6 +13,31 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "Valahala – Interactive Chat Widget",
+    description:
+      "Developed a lightweight and embeddable chat widget as part of a SaaS multi-tenant system, designed to be easily integrated into any business website. Implemented real-time communication using WebSockets (Socket.IO) to connect end-users with the backend messaging system. Integrated JWT-based authentication to securely associate widget sessions with business accounts and users. Applied Clean Architecture and SOLID principles to ensure separation of concerns and long-term maintainability. Designed the widget to seamlessly connect with the SaaS backend, enabling businesses to manage users, admins, chats, and analytics through a centralized dashboard.",
+    image: "/imgs/valahala-widget.png",
+    tags: [
+      "TypeScript",
+      "WebSockets",
+      "Socket.IO",
+      "JWT",
+      "Clean Architecture",
+      "SOLID Principles",
+      "SaaS",
+      "Multi-tenant",
+      "Widget Development",
+      "Real-time Communication",
+      "Authentication",
+      "State Management",
+    ],
+    links: {
+      github: "https://github.com/AmrMagdy00/Valahala_Widget",
+      live: "",
+    },
+  },
+  {
+    id: 2,
     title: "Exclusive API",
     description:
       "A scalable RESTful API built with Node.js and Express, following Clean Architecture, SOLID principles, and best practices for clean, maintainable, and high-performance code.",
@@ -38,7 +63,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 2,
+    id: 3,
     title: "Exclusive Store",
     description:
       "A modern, high-performance online store built with clean code and best practices in mind. It delivers a fully responsive and smooth user experience with secure data handling, fast performance, and elegant design — crafted for scalability, maintainability, and real-world production quality.",
@@ -64,20 +89,6 @@ export const projects: Project[] = [
       live: "https://full-e-commerce-chi.vercel.app/",
     },
   },
-
-  {
-    id: 3,
-    title: "Angular E-Commerce Application",
-    description:
-      "A modern, full-featured e-commerce application built with Angular 20, featuring product listings, shopping cart, favorites, and user authentication..",
-    image: "/imgs/p6.png",
-    tags: ["Angular.js", "Type script", "Bootstrap"],
-    links: {
-      github: "https://github.com/AmrMagdy00/Angular_E_Project",
-      live: "",
-    },
-  },
-
   {
     id: 4,
     title: "School Education Web Application",
@@ -90,7 +101,6 @@ export const projects: Project[] = [
       live: "https://school-education-xi.vercel.app/",
     },
   },
-
   {
     id: 5,
     title: "Digital-Masters-Company-Website",
@@ -117,26 +127,6 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    title: "Bonita Store",
-    description:
-      "A real freelance clothing e-commerce project built with Next.js, TypeScript, MongoDB, and Tailwind CSS. Deployed on Vercel, integrated with Google Analytics and Google Sheets API to save orders after checkout. Features include dynamic product media (videos & photos by size/color), cart context, and a custom database design tailored to client needs.",
-    image: "/imgs/p5.png",
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "MongoDB",
-      "Tailwind CSS",
-      "Google Sheets API",
-      "Google Analytics",
-      "Vercel",
-    ],
-    links: {
-      github: "https://github.com/AmrMagdy00/AliNew",
-      live: "https://bonita.fit/",
-    },
-  },
-  {
-    id: 8,
     title: "Fin-Shark API",
     description:
       "FinShark is a secure .NET Core API for financial management, featuring robust authentication, efficient data handling, and a clean architecture for scalability and maintainability.",
@@ -153,6 +143,18 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/AmrMagdy00/Fin-Shark-API",
+      live: "",
+    },
+  },
+  {
+    id: 8,
+    title: "Angular E-Commerce Application",
+    description:
+      "A modern, full-featured e-commerce application built with Angular 20, featuring product listings, shopping cart, favorites, and user authentication..",
+    image: "/imgs/p6.png",
+    tags: ["Angular.js", "Type script", "Bootstrap"],
+    links: {
+      github: "https://github.com/AmrMagdy00/Angular_E_Project",
       live: "",
     },
   },
